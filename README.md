@@ -50,4 +50,7 @@ Iniciar um container pausado.
 
 ## imagens
 
-É um conjunto de camadas
+É um conjunto de camadas empilhadas para formar um container.
+
+- Quando temos a nossa imagem, ela é read only. Isso significa que não conseguimos modificar as camadas dessa imagem depois que ela foi criada.
+- Se ela é bloqueada para escrita como é que o container consegue escrever informação dentro dela? Porque no fim das contas, quando criamos o container, o container nada mais é do que uma imagem com uma camada adicional de read-write, de leitura e escrita.
